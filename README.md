@@ -25,7 +25,7 @@ Both blocks are fully parameterized by `CLK_FREQ` and `BAUD_RATE`. The bit perio
 - **Mid-bit sampling** in the receiver for maximum timing margin against clock skew
 - **2-flop synchronizer** on the asynchronous `rx` input for metastability hygiene across the clock-domain crossing
 - **One-cycle `rx_valid` strobe** for clean, glitch-free handshaking with downstream logic
-- **Fully parameterized, reusable IP** — no hard-coded timing constants
+- **Fully parameterized, reusable IP**: no hard-coded timing constants
 
 ## Block Diagram
 
@@ -117,5 +117,3 @@ Transmitting `0x55` drives a start bit followed by the eight data bits LSB-first
 ## License
 
 Released under the [MIT License](LICENSE).
-
-Author: **Avinash Kollu** · GitHub: [avinashkollu-git](https://github.com/avinashkollu-git)
